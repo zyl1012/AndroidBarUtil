@@ -1,0 +1,36 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+
+publish {
+    userOrg = 'zyl1012'//bintray.com用户名
+    groupId = 'com.zyl1012.util'//jcenter上的路径
+    artifactId = 'AndroidBarUtil'//项目名称
+    publishVersion = '1.0.0'//版本号
+    desc = 'A util for setting status bar and navigation bar style on Android App'//描述，不重要
+    website = 'https://github.com/zyl1012/AndroidBarUtil'//网站，不重要；尽量模拟github上的地址，例如我这样的；当然你有地址最好了
+    licences = ['Apache-2.0']
+}
+
