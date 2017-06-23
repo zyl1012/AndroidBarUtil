@@ -19,7 +19,7 @@ BarUtil.setStatusAndNavigationBar(this, toobarColor, true, false, toobarColor, t
 ### Lollipop
 ![](https://github.com/zyl1012/AndroidBarUtil/blob/master/screenshots/lollipop_color_translucent.png)
 
-BarUtil.setStatusAndNavigationBar(this, Color.TRANSPARENT, true, true, Color.TRANSPARENT, true, true);
+BarUtil.setStatusAndNavigationBar(this, Color.TRANSPARENT, false, true, Color.TRANSPARENT, false, true);
 ### Kitat
 ![](https://github.com/zyl1012/AndroidBarUtil/blob/master/screenshots/kitat_color_transparent.png)
 ### Lollipop
