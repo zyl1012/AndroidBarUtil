@@ -2,8 +2,10 @@
 A util for setting status bar and navigation bar style on Android App.
 
 # Example
+compile 'com.zyl1012.util:AndroidBarUtil:1.0.0'<br/>
 BarUtil.setStausBar<br/>
 BarUtil.setNavigationBar<br/>
+BarUtil.setStatusAndNavigationBar<br/>
 
 BarUtil.setStatusAndNavigationBar(this, toobarColor, false, false, toobarColor, false, false);
 ### Kitat
